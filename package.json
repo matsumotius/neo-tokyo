@@ -1,0 +1,15 @@
+{
+    "name": "neo-tokyo",
+    "description": "Neo4j driver for Node",
+    "version": "0.0.1",
+    "author": "Akihiro Matsumoto <myatsumoto@gmail.com>",
+    "keywords": ["neo4j", "graph", "database", "driver", "rest"],
+    "dependencies": { "request": "2.2.x" },
+    "main": "./lib",
+    "engines": { "node": ">= 0.4.0" },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/myatsumoto/neo-tokyo.git"
+    }
+}
+
