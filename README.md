@@ -1,6 +1,30 @@
 # neo-tokyo
 neo-tokyo(ネオ東京) is a driver for neo4j in node.
 
+# usage
+```javascript
+var Graph = require('./lib');
+var graph = new Graph('http://localhost:7474');
+
+// save node
+var save_node = graph.node().save({ foo : 'bar' });
+save_node.on('end', function(res){
+  console.log(res);
+});
+save_node.on('error', function(res){
+  console.log(res);
+});
+
+// get property
+var get_property = graph.node(1).properties('foo').get();
+get_property.on('end', function(res){
+  console.log(res);
+});
+get_property.on('error', function(res){
+  console.log(res);
+});
+```
+
 ## License
 
 (The MIT License)
