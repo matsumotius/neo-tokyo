@@ -24,6 +24,17 @@ var tests = {
       test.error();
     });
   },
+  'get properties' : function(test){
+    var get_properties = graph.get.properties(1);
+    get_properties.on('end', function(res){
+      test.equal(res.is_success, true);
+      test.equal(res.content.foo, 'bar');
+      test.finish();
+    });
+    get_properties.on('error', function(res){
+      test.error();
+    });
+  },
   'get property' : function(test){
     var get_property = graph.get.property(1, 'foo');
     get_property.on('end', function(res){
