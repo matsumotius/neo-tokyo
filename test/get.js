@@ -8,6 +8,7 @@ var tests = {
     get_node.on('end', function(res){
       test.equal(res.is_success, true);
       test.equal(res.content.self, 'http://localhost:7474/db/data/node/1');
+      test.equal(res.message, 'OK');
       test.finish();
     });
     get_node.on('error', function(res){
@@ -19,6 +20,7 @@ var tests = {
     get_properties.on('end', function(res){
       test.equal(res.is_success, true);
       test.equal(res.content.foo, 'bar');
+      test.equal(res.message, 'OK');
       test.finish();
     });
     get_properties.on('error', function(res){
@@ -30,6 +32,7 @@ var tests = {
     get_property.on('end', function(res){
       test.equal(res.is_success, true);
       test.equal(res.content, 'bar');
+      test.equal(res.message, 'OK');
       test.finish();
     });
     get_property.on('error', function(res){
