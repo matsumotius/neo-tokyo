@@ -1,7 +1,7 @@
 # neo-tokyo
 neo-tokyo(ネオ東京) is a driver for neo4j in node.
 
-# usage
+# Usage
 ```javascript
 var Graph = require('./lib');
 var graph = new Graph('http://localhost:7474');
