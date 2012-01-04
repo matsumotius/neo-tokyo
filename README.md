@@ -5,7 +5,7 @@ neo-tokyo(ネオ東京) is a driver for neo4j in node.
 
 (The MIT License)
 
-Copyright (c) 2011 myatsumoto &lt;myatsumoto@gmail.com&gt;
+Copyright (c) 2012 myatsumoto &lt;myatsumoto@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
